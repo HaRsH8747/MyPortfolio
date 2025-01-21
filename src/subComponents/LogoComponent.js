@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DarkTheme } from '../components/Themes'
 import logoImage from '../assets/Images/my_logo_filled.png'; // Import your PNG file
 
 const Logo = styled.div`
