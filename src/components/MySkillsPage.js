@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme } from './Themes';
-import { Develope } from './AllSvgs';
+import { Android, Backend, Develope } from './AllSvgs';
 
 
 import LogoComponent from '../subComponents/LogoComponent';
@@ -98,7 +98,7 @@ const MySkillsPage = () => {
                 {/* Android Developer */}
                 <Main>
                     <Title>
-                        <Develope width={40} height={40} /> Android Developer
+                        <Android width={40} height={40} /> Android Developer
                     </Title>
                     <Description>
                         <strong>Skills</strong>
@@ -138,7 +138,7 @@ const MySkillsPage = () => {
                 {/* Backend Developer */}
                 <Main>
                     <Title>
-                        <Develope width={40} height={40} /> Backend Developer
+                        <Backend width={40} height={40} /> Backend Developer
                     </Title>
                     <Description>
                         <strong>Skills</strong>
