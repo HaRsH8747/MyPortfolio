@@ -101,9 +101,6 @@ const MySkillsPage = () => {
                         <Develope width={40} height={40} /> Android Developer
                     </Title>
                     <Description>
-                        I love to develop complex design and
-                    </Description>
-                    <Description>
                         <strong>Skills</strong>
                         <p>
                             Java, Kotlin, Android SDK, Retrofit, RxJava, Android Jetpack, Jetpack Compose, JUnit, Espresso, MotionLayout
@@ -124,9 +121,6 @@ const MySkillsPage = () => {
                         <Develope width={40} height={40} /> Frontend Developer
                     </Title>
                     <Description>
-                        I love to develop complex design and
-                    </Description>
-                    <Description>
                         <strong>Skills</strong>
                         <p>
                             HTML5, CSS3, JavaScript, ReactJS, Next.js, Media Queries, Tailwind CSS, REST APIs, GraphQL
@@ -146,9 +140,6 @@ const MySkillsPage = () => {
                     <Title>
                         <Develope width={40} height={40} /> Backend Developer
                     </Title>
-                    <Description>
-                        I love to develop complex design and
-                    </Description>
                     <Description>
                         <strong>Skills</strong>
                         <p>
