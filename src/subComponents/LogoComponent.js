@@ -1,6 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import logoImage from '../assets/Images/my_logo_filled.png'; // Import your PNG file
+import styled from "styled-components";
+import { mediaQueries } from "../components/Themes";
+import lightLogo from "../assets/Images/my_logo_dark.png"; // Add your light theme logo path
+import darkLogo from "../assets/Images/my_logo_light.png"; // Add your light theme logo path
 
 const Logo = styled.div`
   display: inline-block;
@@ -10,22 +11,30 @@ const Logo = styled.div`
   z-index: 3;
   
   img {
-    width: 50px; // Adjust size according to your needs
     height: auto;
+    width: 3rem; // Default size
     transition: all 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
-`
+
+  ${mediaQueries(40)`
+    left: 1rem;
+    top: 2rem;
+    
+    img {
+      width: 2.5rem; // Smaller size for mobile
+    }
+  `};
+`;
 
 const LogoComponent = (props) => {
-    return (
-        <Logo>
-          <img src={logoImage} alt="Logo" />
-        </Logo>
-    )
-}
+  return (
+    <Logo theme={props.theme}>
+      <img 
+        src={props.theme === "dark" ? darkLogo : lightLogo} 
+        alt="Logo" 
+      />
+    </Logo>
+  );
+};
 
-export default LogoComponent
+export default LogoComponent;
